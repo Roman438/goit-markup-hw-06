@@ -636,6 +636,87 @@ img {
   background-color: var(--main-blue-color);
 }
 
+.sending-list {
+  display: flex;
+  gap: 12px;
+}
+
+.sending {
+  margin-left: 93px;
+}
+
+.sending p {
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+}
+
+.send-email {
+  width: 358px;
+  height: 50px;
+  padding: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.sending-button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--main-blue-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-white-color);
+  outline: none;
+  padding: 0;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.sending-item2 {
+  display: flex;
+}
+
+.icon-send {
+  color: currentColor;
+  fill: var(--main-white-color);
+  margin-left: 10px;
+  /* position: relative;
+  top: 50%;
+  transform: translateY(-50%); */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.send-email::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--footer-address-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+}
+
 /* ------------------backdrop--------------- */
 
 .backdrop {
@@ -825,37 +906,6 @@ img {
   margin-bottom: 30px;
   position: relative;
 }
-
-/* .icon-check {
-  position: absolute;
-  left: 120px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: var(--main-blue-color);
-  fill: var(--main-white-color);
-  fill: currentColor;
-  border-radius: 4px;
-} */
-
-/* .span-color {
-  color: var(--primary-text-color);
-  background-color: var(--main-white-color);
-  color: greenyellow;
-} */
-
-/* .icon-notcheck {
-  position: absolute;
-  left: 100px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: var(--main-white-color);
-  fill: currentColor;
-} */
-
-/* .checkboxer:checked ~ .span-color {
-  color: rgb(221, 109, 17);
-  background-color: red;
-} */
 
 .checkboxer:checked + .policy::before {
   background-color: var(--main-blue-color);
